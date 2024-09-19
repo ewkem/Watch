@@ -2040,7 +2040,7 @@ img.media-block {
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
-  background: url("/img/collect.png") no-repeat center center, #9e0039;
+  background: url("./img/collect.png") no-repeat center center, #9e0039;
 }
 
 .collection__cont {
