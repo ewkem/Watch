@@ -1,0 +1,69 @@
+.header__row {
+	display: flex;
+}
+.header__menu {
+	padding: 25px;
+	@media (max-width: 1275px) {
+		padding: 10px;
+	}
+}
+.header__logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__body {
+	width: 100%;
+	margin: auto 0;
+}
+.header__img {
+	@media (max-width: 1275px) {
+		width: 150px;
+		height: 30px;
+		img {
+			width: 100%;
+		}
+	}
+}
+.header__text span {
+	display: none;
+}
+.header__text._active_text {
+	z-index: 5;
+}
+.header__text._active_text span {
+	display: block;
+	color: #fff;
+}
+.header__text._active_text p {
+	display: none;
+}
+
+.header__products {
+	padding: 25px;
+	@media (max-width: 1275px) {
+		padding: 10px;
+	}
+}
+.header__text2._active_text {
+	z-index: 5;
+}
+.header__text2 span {
+	display: none;
+}
+.header__text2._active_text span {
+	display: block;
+	color: #fff;
+}
+.header__text2._active_text p {
+	display: none;
+}
+
+.header__text,
+.header__text2 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: "Montserrat";
+	user-select: none;
+}

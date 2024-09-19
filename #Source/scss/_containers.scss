@@ -1,0 +1,17 @@
+.container-logo {
+	flex: 1 1 100%;
+	display: flex;
+	@media (max-width: 1275px) {
+		height: 50px;
+	}
+}
+
+.container-menu {
+	text-align: center;
+}
+
+.container-search {
+	margin: 0 auto;
+	max-width: 840px;
+	text-align: center;
+}

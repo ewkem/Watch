@@ -1,0 +1,125 @@
+.footer {
+}
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__arrow-body {
+	padding: 25px;
+	@media (max-width: 1275px) {
+		padding: 10px;
+	}
+}
+//------------------------------------------------------------footer__arrow-l
+.footer__arrow-l {
+	display: block;
+	position: relative;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+}
+.footer__arrow-l::before {
+	content: "";
+}
+.footer__arrow-l span,
+.footer__arrow-l::before {
+	position: absolute;
+	left: 0;
+	top: 48%;
+	height: 3px;
+	width: 100%;
+	background-color: #9e0039;
+	border-radius: 1px;
+}
+.footer__arrow-l span {
+	transform: rotate(40deg) translate(3px, 4.5px);
+}
+.footer__arrow-l::before {
+	transform: rotate(-40deg) translate(6px, -8px);
+}
+//------------------------------------------------------------footer__arrow-l
+//------------------------------------------------------------footer__arrow-r
+.footer__arrow-r {
+	display: block;
+	position: relative;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+}
+.footer__arrow-r::before {
+	content: "";
+}
+.footer__arrow-r span,
+.footer__arrow-r::before {
+	position: absolute;
+	left: 0;
+	top: 48%;
+	height: 3px;
+	width: 100%;
+	background-color: #9e0039;
+	border-radius: 1px;
+}
+.footer__arrow-r span {
+	transform: rotate(40deg) translate(-5px, -6px);
+}
+.footer__arrow-r::before {
+	transform: rotate(-40deg) translate(-5px, 5.5px);
+}
+//------------------------------------------------------------footer__arrow-l
+
+.footer__navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 0 auto;
+}
+.navigation__text {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: "Montserrat";
+	user-select: none;
+}
+.navigation__body {
+	display: flex;
+}
+.navigation__circle {
+	position: relative;
+	margin-left: 6.5px;
+	margin-right: 6.5px;
+}
+.midle__circle {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	top: 0;
+	left: 0;
+	background-color: #1d2834;
+	border-radius: 25px;
+	border: 2px solid #fff;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	z-index: 2;
+}
+.midle__circle._click_circle {
+	background-color: #9e0039;
+}
+.external__circle {
+	display: none;
+	position: absolute;
+	background-color: #9e0039;
+	width: 29px;
+	height: 29px;
+	top: -3.4px;
+	left: -3.4px;
+	border-radius: 25px;
+	transition: all 0.3s ease 0s;
+}
+.external__circle._hover_circle {
+	display: block;
+	border: 1px solid #000;
+}
+.external__circle._click_circle {
+	display: block;
+	border: 1px solid #000;
+}

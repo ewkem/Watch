@@ -1,0 +1,26 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 525px) {
+		display: none;
+	}
+}
+.wrapper__visible {
+	display: none;
+	@media (max-width: 525px) {
+		text-align: center;
+		display: flex;
+		.wrapper__background {
+			width: 100%;
+			margin-top: 300px;
+			& img {
+				width: 200px;
+			}
+		}
+	}
+}
+
+.main {
+	flex: 1 1 auto;
+	display: flex;
+}
